@@ -90,3 +90,11 @@ flutter pub get
 flutter run
 ```
 
+👥 Contributors
+- Dan Mathew Gamale
+- Jennifer Garin
+- Jessa Marie Ilogon
+
+🌏 Acknowledgements
+- Baybayin dataset by James Arnold Nogra on Kaggle
+- Inspired by the cultural heritage of the Philippines
