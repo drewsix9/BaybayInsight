@@ -1,18 +1,92 @@
-# baybayin_character_recognition
+# 📝 BaybayInsight
 
-A new Flutter project.
+BaybayInsight is a deep learning-powered application for recognizing **Baybayin characters** — an ancient Filipino script — using **Convolutional Neural Networks (CNNs)**. This project aims to help preserve and promote Filipino heritage by providing an automated tool that can interpret hand-drawn Baybayin characters with high accuracy.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 📌 Table of Contents
+- [About the Project](#about-the-project)
+- [Tech Stack](#tech-stack)
+- [Dataset](#dataset)
+- [Model Architecture](#model-architecture)
+- [Results](#results)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributors](#contributors)
+- [License](#license)
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 📖 About the Project
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# Baybayin_Character_Recognition
-# Digit_Recognizer
+Baybayin (also known as Alibata) is a pre-colonial Philippine writing system. With the rise of modern digital tools, this project aims to automate the recognition of Baybayin characters through a trained CNN model. This system enables users to draw characters, which are then classified and interpreted as digital text.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend**: Flutter
+- **Machine Learning**: Python, TensorFlow, Keras, NumPy
+- **Training Platform**: Google Colab (with GPU)
+- **Dataset**: Kaggle (by James Arnold Nogra)
+
+---
+
+## 📊 Dataset
+
+- Total images: 10,000+
+- Number of classes: 63 Baybayin characters
+- Preprocessing:
+  - Resized and normalized image data
+  - Split into training, validation, and testing sets
+
+---
+
+## 🧠 Model Architecture
+
+The CNN model consists of:
+
+- 3 Convolutional Blocks:
+  - Conv2D → BatchNormalization → ReLU → MaxPooling2D → Dropout
+- GlobalAveragePooling2D
+- Fully Connected Dense Layers
+- Softmax Output Layer (63 classes)
+
+### Optimizations
+- Filter sizes: 3x3, 5x5, 7x7
+- Channel sizes: 8–128
+- Adam Optimizer + Cross-Entropy Loss
+- Dropout Regularization
+- Trained for 25 epochs
+
+---
+
+## 📈 Results
+
+- **Training Accuracy**: 98.89%
+- **Validation Accuracy**: 98.48%
+- Visual metrics include:
+  - Epoch Accuracy Graph
+  - Confusion Matrix
+
+---
+
+## 💻 Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/drewsix9/BaybayInsight.git
+cd BaybayInsight
+```
+
+2. Install Flutter dependencies:
+```bash
+flutter pub get
+```
+
+3. Launch the FLutter app:
+```bash
+flutter run
+```
+
