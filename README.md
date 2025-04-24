@@ -49,8 +49,9 @@ The full model training workflow — including data preprocessing, CNN architect
 
 You can open and run the notebook directly in your browser using Google Colab. GPU acceleration is recommended for faster training.
 
+---
 
-### Optimizations
+## Optimizations
 - Filter sizes: 3x3, 5x5, 7x7
 - Channel sizes: 8–128
 - Adam Optimizer + Cross-Entropy Loss
