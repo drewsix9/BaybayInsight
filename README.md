@@ -4,19 +4,6 @@ BaybayInsight is a deep learning-powered application for recognizing **Baybayin 
 
 ---
 
-## 📌 Table of Contents
-- [About the Project](#about-the-project)
-- [Tech Stack](#tech-stack)
-- [Dataset](#dataset)
-- [Model Architecture](#model-architecture)
-- [Results](#results)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributors](#contributors)
-- [License](#license)
-
----
-
 ## 📖 About the Project
 
 Baybayin (also known as Alibata) is a pre-colonial Philippine writing system. With the rise of modern digital tools, this project aims to automate the recognition of Baybayin characters through a trained CNN model. This system enables users to draw characters, which are then classified and interpreted as digital text.
@@ -51,6 +38,17 @@ The CNN model consists of:
 - GlobalAveragePooling2D
 - Fully Connected Dense Layers
 - Softmax Output Layer (63 classes)
+
+---
+
+## 📓 Model Training Notebook
+
+The full model training workflow — including data preprocessing, CNN architecture, model training, evaluation, and visualization — is documented in this Google Colab notebook:
+
+👉 [Baybayin Character Recognition – Colab Notebook](https://colab.research.google.com/drive/1eN_--NPSUw8JFufXIEJ70S1yDneL_b7C?usp=sharing)
+
+You can open and run the notebook directly in your browser using Google Colab. GPU acceleration is recommended for faster training.
+
 
 ### Optimizations
 - Filter sizes: 3x3, 5x5, 7x7
